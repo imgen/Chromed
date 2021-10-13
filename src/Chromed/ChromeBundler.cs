@@ -7,9 +7,9 @@ using static System.Runtime.InteropServices.RuntimeInformation;
 
 namespace Chromed
 {
-    public static class ChromeZipper
+    public static class ChromeBundler
     {
-        public static void ZipTo(string targetDir, string zipBaseDir = null)
+        public static void UnzipTo(string targetDir, string zipBaseDir = null)
         {
             zipBaseDir ??= Environment.CurrentDirectory;
             string zipFileRelativePath = GetZipRelativePath();

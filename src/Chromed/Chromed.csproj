@@ -5,6 +5,18 @@
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageId>chromed</PackageId>
     <Company>Topo Solutions Ltd</Company>
+    <Description>A package to bundle headless Chrome
+Currently it bundles revision 884014
+Only Windowx x64, Linux x64 and Mac x64 are supported
+The bundled zip files are downloaded from below links
+https://storage.googleapis.com/chromium-browser-snapshots/Win_x64/884014/chrome-win.zip
+https://storage.googleapis.com/chromium-browser-snapshots/Linux_x64/884014/chrome-linux.zip
+https://storage.googleapis.com/chromium-browser-snapshots/Mac/884014/chrome-mac.zip
+</Description>
+    <PackageProjectUrl>https://github.com/imgen/Chromed</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/imgen/Chromed</RepositoryUrl>
+    <PackageTags>Chrome;Headless-Chrome</PackageTags>
+    <VersionPrefix>1.0.1</VersionPrefix>
   </PropertyGroup>
 
   <ItemGroup>

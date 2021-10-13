@@ -1,13 +1,4 @@
-﻿using System;
-using Chromed;
+﻿using Chromed;
+using System.IO;
 
-namespace Chromed.Tests
-{
-    internal class Program
-    {
-        static void Main(string[] args)
-        {
-            ChromeZipper.ZipTo("E:/Chripe");
-        }
-    }
-}
+ChromeBundler.UnzipTo(Path.GetTempPath());

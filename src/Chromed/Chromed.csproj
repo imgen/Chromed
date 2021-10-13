@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageId>chromed</PackageId>
+    <Company>Topo Solutions Ltd</Company>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content CopyToOutputDirectory="PreserveNewest" Include="runtimes\linux-x64\native\chrome-linux.zip" Pack="true" PackagePath="runtimes\linux-x64\native\chrome-linux.zip" />
+    <Content CopyToOutputDirectory="PreserveNewest" Include="runtimes\win-x64\native\chrome-win.zip" Pack="true" PackagePath="runtimes\win-x64\native\chrome-win.zip" />
+    <Content CopyToOutputDirectory="PreserveNewest" Include="runtimes\osx-x64\native\chrome-mac.zip" Pack="true" PackagePath="runtimes\osx-x64\native\chrome-mac.zip" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,3 @@
+﻿https://storage.googleapis.com/chromium-browser-snapshots/Win_x64/884014/chrome-win.zip
+https://storage.googleapis.com/chromium-browser-snapshots/Linux_x64/884014/chrome-linux.zip
+https://storage.googleapis.com/chromium-browser-snapshots/Mac/884014/chrome-mac.zip

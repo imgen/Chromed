@@ -9,10 +9,12 @@ namespace Chromed
 {
     public static class ChromeBundler
     {
-        public static void UnzipTo(string targetDir, string zipBaseDir = null)
+        public static string UnzipTo(string targetDir, 
+            string zipBaseDir = null, 
+            OSPlatform? platform = null)
         {
             zipBaseDir ??= Environment.CurrentDirectory;
-            string zipFileRelativePath = GetZipRelativePath();
+            string zipFileRelativePath = GetZipRelativePath(platform);
             var zipFilePath = Path.Combine(zipBaseDir, zipFileRelativePath);
             if (IsOSPlatform(OSPlatform.OSX))
             {
@@ -33,17 +35,17 @@ namespace Chromed
             process.WaitForExit();
         }
 
-        private static string GetZipRelativePath()
+        private static string GetZipRelativePath(OSPlatform? platform = null)
         {
-            if (IsOSPlatform(OSPlatform.Windows))
+            if (platform == OSPlatform.Windows || IsOSPlatform(OSPlatform.Windows))
             {
                 return "runtimes/win-x64/native/chrome-win.zip";
             }
-            else if (IsOSPlatform(OSPlatform.OSX))
+            else if (platform == OSPlatform.OSX || IsOSPlatform(OSPlatform.OSX))
             {
                 return "runtimes/osx-x64/native/chrome-mac.zip";
             }
-            else if (IsOSPlatform(OSPlatform.Linux))
+            else if (platform == OSPlatform.Linux || IsOSPlatform(OSPlatform.Linux))
             {
                 return "runtimes/linux-x64/native/chrome-linux.zip";
             }

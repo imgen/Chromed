@@ -1,4 +1,4 @@
-﻿using Chromed;
+﻿using System;
 using System.IO;
 
-ChromeBundler.UnzipTo(Path.GetTempPath());
+Console.WriteLine("Chromed tests");

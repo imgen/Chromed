@@ -19,7 +19,7 @@ https://storage.googleapis.com/chromium-browser-snapshots/Mac/884014/chrome-mac.
     <RepositoryUrl>https://github.com/imgen/Chromed</RepositoryUrl>
     <PackageTags>Chrome;Headless-Chrome</PackageTags>
     <VersionPrefix>1.0.2</VersionPrefix>
-    <Product>Chromed.Linux</Product>
+    <Product>Chromed</Product>
     <Authors>Topo Solutions Ltd</Authors>
   </PropertyGroup>
 

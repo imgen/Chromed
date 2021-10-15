@@ -6,7 +6,18 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="chromed" Version="1.0.1" />
+    <PackageReference Include="chromed" Version="1.0.2" />
   </ItemGroup>
 
+  <Target Name="UnzipChrome" AfterTargets="Build">
+    <Message Text="Unzip Linux Chrome to build output" />
+    <Unzip SourceFiles="$(OutDir)runtimes/linux-x64/native/chrome-linux.zip" DestinationFolder="$(OutDir)" OverwriteReadOnlyFiles="true" />
+  </Target>
+
+  <Target Name="DeleteLinuxChrome" AfterTargets="UnzipChrome">
+    <Message Text="Deleting chrome-linux.zip" />
+    <Delete Files="$(OutDir)runtimes/linux-x64/native/chrome-linux.zip" />
+  </Target>
+
 </Project>
+

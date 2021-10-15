@@ -1,4 +1,3 @@
 ﻿using System;
-using System.IO;
 
-Console.WriteLine("Chromed tests");
+Console.WriteLine("Chromed usage example");

@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.1</TargetFramework>
+    <TargetFramework>netstandard1.0</TargetFramework>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageId>chromed</PackageId>
     <Company>Topo Solutions Ltd</Company>
@@ -18,7 +18,7 @@ https://storage.googleapis.com/chromium-browser-snapshots/Mac/884014/chrome-mac.
     <PackageProjectUrl>https://github.com/imgen/Chromed</PackageProjectUrl>
     <RepositoryUrl>https://github.com/imgen/Chromed</RepositoryUrl>
     <PackageTags>Chrome;Headless-Chrome</PackageTags>
-    <VersionPrefix>1.0.2</VersionPrefix>
+    <VersionPrefix>1.0.3</VersionPrefix>
     <Product>Chromed</Product>
     <Authors>Topo Solutions Ltd</Authors>
   </PropertyGroup>
